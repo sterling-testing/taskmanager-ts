@@ -1,0 +1,33 @@
+{
+  "name": "taskmanager-sdk",
+  "version": "0.2.0",
+  "description": "SDK for Task Manager API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "test": "npx tsx tests/client.test.ts"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdresearch/ts-sdk.git"
+  },
+  "homepage": "https://github.com/hdresearch/ts-sdk",
+  "keywords": ["vers", "sdk", "api", "vm", "orchestration"],
+  "dependencies": {
+    "ssh2": "^1.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/ssh2": "^1.15.0",
+    "tsx": "*",
+    "typescript": "^5.0.0",
+    "vitest": "^3.1.1"
+  }
+}
